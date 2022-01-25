@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Feesten - Van echelpoel</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link href="../css/opmaak.css" rel="stylesheet">
+        </head>
+        <body onload="init();" class="home">
+        <div class="zoekbalk">
+            <a href="#" class="hamburger" title=""></a>
+            <p>
+                <input type="text" name="Zoek" id="Zoek" value="Zoeken..." onfocus="if(this.value=='Zoeken...') this.value='';this.className='wbfocus'" onblur="if(this.value=='') {this.value='Zoeken...';this.className='wbblur'}" onkeypress="return onkeySearch(event);" />
+            </p>
+        </div>
+        <nav class="mainnav">
+            <a href="../index.html"><img class="logo" src="../images/logo/logo van echelpoel.png" alt=""></a>
+            <ul class="nav">
+                <li><a href="../producten/producten.html" title="">Producten</a></li>   
+                <li><a href="../recepten/recepten.html" title="">Recepten</a></li>          
+                <li class="active"><a href="#" title="">Feesten</a></li> 
+                <li><a href="../voedingsadvies-allergenen/voedingsadvies-allergenen.html" title="">Allergenen</a></li>   
+                <li><a href="../contact/contact.html" title="">Contact</a></li>   
+                <li><a href="" title="">Winkelmand</a></li>     
+            </ul>
+        </nav>
+        <header class="mainheader02">
+            <h1>Heerlijke bbq formules</h1>
+        </header>
+        <main class="feest">
+            <article class="formule">
+                <p>(Vanaf 4 personen)</p><br>
+                <h5>Formule 1<br> 
+                Levering buffet: € 14,00 p.p.</h5><br>
+                <p class="worst">Witte worst<br>
+                Gemarineerde spiering kotelet<br>
+                Souvlaki<br>
+                BBQ burger<br>
+                Diverse salades<br>2 soorten koude sauzen en ovenverse broodsoorten</p>
+                <button>Aantal personen | 4 <span class="fas fa-angle-double-down"></span></button>
+                <div class="icoonen01">
+                    <p class="fas fa-shopping-cart">
+                    <p class="far fa-heart"></p>
+                </div>
+            </article>
+            <section>
+                <figure class="foodtruck">
+                    <div class="animatie-houder">
+                        <h2>Foodtruck</h2>
+                        <div id="animation_container" style="background-color:rgba(135, 155, 104, 1.00); width:550px; height:500px">
+                            <canvas id="canvas" width="550" height="500" style="position: absolute; display: block; background-color:rgba(135, 155, 104, 1.00);"></canvas>
+                            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:550px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption class="verwachten">
+                        <div class="aantal">
+                            <ul class="list-unstyled">
+                                <li>Aantal personen</li>
+                                <li>4 <span class="fas fa-angle-double-down"></span></li>
+                            </ul> 
+                        </div>
+                        <h5>Wat kan je verwachten?</h5>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+                        <button class="meerinfo">Meer info</button>
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
+        <section>
+            <div class="meest">
+                <h4>Meest gekozen</h4>
+            </div>
+            <aside class="mainaside">
+                <section class="bouillongroenten">
+                    <p><a href="">Bouillongroenten</a></p>
+                </section>
+                <section class="kaaskrokketen">
+                    <p><a href="">Kaaskrokketen</a></p>
+                </section>
+                <section class="frambozen">
+                    <p><a href="">Frambozen</a></p>
+                </section>
+                <a href="#" class="bolletje" title=""></a>
+            </aside>
+        </section>
+        <footer>
+            <div class="address">
+                <a href="#"><img src="../images/logo/logo van echelpoel wit.png"></a>
+                <address>
+                    Diepvries- en Horecaservice Van Echelpoel bvba<br>
+                    Ambachtstraat 9<br>
+                    B-2340 BEERSE<br>
+                    T.: 014 61 35 24<br>
+                    F.: 014 61 03 44<br>
+                    info@vanechelpoel.net
+                </address>
+            </div>
+            <div class="navfooter">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../producten/producten.html">Producten</a></li>
+                        <li><a href="#">Feesten</a></li>
+                        <li><a href="../voedingsadvies-allergenen/voedingsadvies-allergenen.html" title="">Allergenen</a></li>   
+                        <li><a href="../contact/contact.html" title="">Contact</a></li>   
+                        <li><a href="" title="">Winkelmand</a></li> 
+                    </ul>
+                </nav>
+            </div>
+            <div class="nieuwsbrief">
+                <p>Schrijf je hier in voor onze nieuwsbrief</p>
+                <p>
+                    <input type="text" name="Zoek" id="Zoek" value="E-mail..." onfocus="if(this.value=='Zoeken...') this.value='';this.className='wbfocus'" onblur="if(this.value=='') {this.value='Zoeken...';this.className='wbblur'}" onkeypress="return onkeySearch(event);" />
+                </p>
+                 <a href=""><button>Inschrijven</button></a>
+            </div>
+            <div class="icoonen">
+                <a href="https://www.facebook.com/vneccelpoel" target="_blank" class="fab fa-facebook-square" title=""></a>
+                <a href="https://www.instagram.com/explore/locations/1820431228052552/van-echelpoel/" target="_blank" class="fab fa-instagram" title=""></a>
+            </div>
+        </footer>
+            <!-- write your code here -->
+            <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+            <script src="../js/Truck-animatie.js"></script>
+            <script>
+            var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+            function init() {
+                canvas = document.getElementById("canvas");
+                anim_container = document.getElementById("animation_container");
+                dom_overlay_container = document.getElementById("dom_overlay_container");
+                var comp=AdobeAn.getComposition("82CB6BA8B5354425B6AB9BBC42F63EA1");
+                var lib=comp.getLibrary();
+                var loader = new createjs.LoadQueue(false);
+                loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+                loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+                var lib=comp.getLibrary();
+                loader.loadManifest(lib.properties.manifest);
+            }
+            function handleFileLoad(evt, comp) {
+                var images=comp.getImages();    
+                if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }    
+            }
+            function handleComplete(evt,comp) {
+                //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+                var lib=comp.getLibrary();
+                var ss=comp.getSpriteSheet();
+                var queue = evt.target;
+                var ssMetadata = lib.ssMetadata;
+                for(i=0; i<ssMetadata.length; i++) {
+                    ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+                }
+                exportRoot = new lib.Truckanimatie();
+                stage = new lib.Stage(canvas);  
+                //Registers the "tick" event listener.
+                fnStartAnimation = function() {
+                    stage.addChild(exportRoot);
+                    createjs.Ticker.framerate = lib.properties.fps;
+                    createjs.Ticker.addEventListener("tick", stage);
+                }       
+                //Code to support hidpi screens and responsive scaling.
+                AdobeAn.makeResponsive(true,'both',false,1,[canvas,anim_container,dom_overlay_container]);  
+                AdobeAn.compositionLoaded(lib.properties.id);
+                fnStartAnimation();
+            }
+            </script>
+            <!-- write your code here -->
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

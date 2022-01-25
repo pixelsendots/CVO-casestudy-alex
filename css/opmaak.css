@@ -1,0 +1,1691 @@
+/* oefening bij examenopdracht */
+
+@import "reset.css";
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rajdhani:wght@300;500;700&family=Roboto+Slab:wght@300;400;700&display=swap');
+
+body{
+	font: 300 100%/1.4 'Helvetica Neue', Arial, sans-serif;
+	color: ##4c5f28;
+	background: white;
+	text-decoration: none;
+	margin: 0 auto; /* omranding weg doen bij moderne browsers */
+	padding: 0; /* omranding weg doen bij oude browsers */
+}
+
+h1{
+	font: 300 100%/1.5 'Rajdhani', Arial, sans-serif;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+h2{
+	font-size: 23px;
+	color: #4C5F28;
+	text-align: center;
+}
+
+h3{
+	font-size: 15px;
+	color: #A1C11A;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* navigatie ---------------------------------------------- */
+
+.nav { display: none;}
+
+.mainnav { 
+    position: relative;
+}
+
+@media screen and (min-width: 900px) {
+    .mainnav { 
+        height: 180px; 
+        position: relative;
+    }
+    
+    .nav {
+        height: 200px;
+		display: flex; 
+		justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #4C5F28;
+		letter-spacing: 1px;
+	}
+
+	 .nav a:hover,
+	 .nav li.active a{ font-weight: 700;}
+
+
+    
+    .nav li:nth-of-type(1) { margin-left: 40px; }
+    
+    .nav li:nth-of-type(6) { margin-right: 40px; }
+
+    .nav li:nth-of-type(3) { margin-right: 100px; }
+    
+    .nav li:nth-of-type(4) { margin-left: 100px; }
+}
+
+/* Zoekbalk ------------------------------------------------ */
+
+.zoekbalk{
+	background: #4c5f28;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+.zoekbalk p input{
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: 80px;
+}
+
+
+@media screen and (min-width: 900px){
+	.zoekbalk p input{
+		margin-left: 450px;
+		width: 40%;
+	}
+}
+
+/* Hamburger overlay ------------------------------------- */
+
+.hamburger{
+	position: absolute;
+	z-index: 1000;
+	top: 1em;
+	right: 1.5em;
+	text-decoration: none;
+}
+
+.hamburger::before{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 4rem;
+	content: "\f0c9";
+	color: white;
+}
+
+@media screen and (min-width: 900px){
+	.hamburger::before{
+		content: "\f007";
+	}
+}
+
+/* logo mainnav---------------------------------------------------- */
+
+.logo {
+    display: block;
+    height: 160px;
+    margin: 3em auto;
+}
+
+@media screen and (min-width: 900px){
+	.logo { 
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -120px;
+        height: auto;
+        width: 210px;
+	}
+}
+
+/* mainheader01 home pagina ----------------------------------------- */
+
+.mainheader01{
+	background: url(../images/header/home-pagina-02.png) no-repeat center/cover;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/*background: linear-gradient(90deg, RGBA(0, 0, 0, 0), RGBA(0, 0, 0, 1));*/
+}
+
+.mainheader01 h1{
+	color: black;
+	font-size: 15px;
+	background: white;
+	margin-bottom: 20px;
+	padding: 10px;
+	opacity: 60%;
+	border-radius: 15px;
+}
+
+/* mainheader02 feesten ----------------------------------------- */
+
+.mainheader02{
+	background: url(../images/bbq/bbq.jpeg) no-repeat center/cover;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	/*background: linear-gradient(90deg, RGBA(0, 0, 0, 0), RGBA(0, 0, 0, 1));*/
+}
+
+.mainheader02 h1{
+	color: black;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0 auto;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	opacity: 80%;
+
+}
+
+
+/* mainheader03 onze producten ----------------------------------------- */
+.mainheader03{
+	background: url(../images/header/home-pagina-02.png) no-repeat center/cover;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/*background: linear-gradient(90deg, RGBA(0, 0, 0, 0), RGBA(0, 0, 0, 1));*/
+}
+
+.mainheader03 h1{
+	color: black;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0 auto;
+	margin-bottom: 90px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	opacity: 80%;
+}
+
+@media screen and (min-width: 900px){
+	.mainheader01 h1{ 
+		font-size: 30px;
+	}
+}
+
+/* mainheader04 productcategorie ----------------------------------------- */
+
+.mainheader04{
+	background: url(../images/header/home-pagina-02.png) no-repeat center/cover;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/*background: linear-gradient(90deg, RGBA(0, 0, 0, 0), RGBA(0, 0, 0, 1));*/
+}
+
+.mainheader04 h1{
+	color: black;
+	font-size: 30px;
+	font-weight: 400;
+	margin: 0 auto;
+	margin-bottom: 90px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	opacity: 80%;
+}
+
+
+/* illustraties  ------------------------------------------ */
+
+.illustraties{
+	display: grid;
+	grid-template-columns: auto 230px;
+	grid-template-rows: auto auto;
+	text-align: center;
+}
+
+.illustraties a{ text-decoration: none;}
+
+.vlees img{ width: 200px; }
+
+.vis img{ width: 200px; }
+
+.snacks img{ width: 200px; }
+
+.groent img{ width: 200px; }
+
+.ijstaarten img{ width: 200px; }
+
+.brood img{ width: 200px; }
+
+@media screen and (min-width: 900px){
+	.illustraties{
+		grid-template-columns: auto  auto auto;
+		grid-template-rows: auto;
+		justify-content: space-around;
+		padding-top: 20px;
+	}
+
+	.illustraties a{ text-decoration: none;}
+
+	.illustraties a:hover{transform: scale(1.2);}
+}
+
+/* voedingsadvies stijlen ---------------------------------------*/
+
+.voedingsadvies{
+	background: url(../images/header/home-pagina-02.jpeg) no-repeat center/cover;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.voedingsadvies button{ 
+	background: #A1C11A;
+	width: 120px;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	position: relative;
+	top: 100px;
+	left: -180px;
+}
+
+.voedingsadvies a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.voedingsadvies h2 a{
+	text-transform: uppercase;
+	font: 300 100%/1.5 'Rajdhani', Arial, sans-serif;
+	font-size: 35px;
+	color: #4C5F28;
+	background-color: white;
+	opacity: 90%;
+	width: 400px;
+	margin: 0 auto;
+	position: relative;
+	top: 5px;
+	left: 30px;
+	text-decoration: none;
+}
+
+
+@media screen and (min-width: 900px){
+	.mainsection .voedingsadvies button{
+		left: 60px;
+		top: 5px;
+		padding: 10px;
+		width: 10%;
+	}
+
+	.mainsection .voedingsadvies a{ font-size: 25px;}		
+
+	.mainsection .voedingsadvies h2 a{
+		width: 600px;
+		top: 5px;
+		left: 40px;
+		padding: 10px 30px 10px 30px;
+		width: 300px;
+	}
+}
+
+
+/* recept stijlen ---------------------------------------------*/
+
+.recept01{
+	background:#8FAA70;
+	height: 940px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.recept01 img{ 
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	margin-top: 680px;
+	position: absolute;
+}
+
+.recept01 h2{
+	text-transform: uppercase;
+	font: 300 100%/1.5 'Rajdhani', Arial, sans-serif;
+	font-size: 100px;
+	color: white;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.recept01 h4{
+	font: 700 100%/1.5 'Rajdhani', Arial, sans-serif;
+	color: #4C5F28;
+	font-size: 25px;
+	text-align: right;
+	width: 300px;
+	margin: 0 120px;
+}
+
+.recept01 h5{
+	font: normal 100%/1.5 'Rajdhani', Arial, sans-serif;
+	color: #4C5F28;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+
+.recept01 p{
+	font: normal 100%/1.5 'Rajdhani', Arial, sans-serif;
+	color: white;
+	font-size: 15px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+
+.recept01 ol li{
+	font: normal 100%/1.5 'Rajdhani', Arial, sans-serif;
+	color: white;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+
+.recept01 button{
+	background: #4C5F28;
+	font: normal 100%/1.5 Helvetica neue, Arial, sans-serif;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	position: relative;
+	left: 90px;
+	top: 210px;
+}
+
+.recept01 button a{
+		color: white;
+		text-decoration: none;
+}
+
+.groen{
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 900px){
+	.recept01{ 
+		height: 700px;
+		margin-top: 50px;
+	}
+
+	.recept01 img{
+		width: 40%;
+		height: 45%;
+		left: 870px;
+		top: 1000px;
+	}
+
+	.recept01 h2{ 
+		margin-left: 860px;
+		position: relative;
+		top: 20px;
+	}
+
+	.recept01 h4{
+		font-size: 30px;
+		width: 600px;
+		margin-left: 210px;
+	}
+
+	.recept01 h5{
+		text-align: left;
+		margin-left: 235px;
+	}
+
+	.recept01 p{
+		text-align: left;
+		margin-left: 235px;
+	}
+
+	.recept01 ol li{
+		text-align: left;
+		margin-left: 210px;
+	}
+
+	.recept01 button{
+		left: 235px;
+		top: 15px;
+	}
+
+	.groen{
+		margin-left: -100px;
+	}
+}
+
+/* aside stijlen --------------------------------------*/
+
+.mainaside{
+	height: 400px;
+	width: 100%;
+}
+
+.meest h4{
+	font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+	color: #819D62;
+	font-size: 40px;
+	margin: 50px 0 20px 0;
+	text-align: center;
+}
+
+.kaaskrokketen{display: none;}
+.frambozen{display: none;}
+
+.bouillongroenten{
+	background: url(../images/Boulliongroenten/bouillongroenten.jpeg) no-repeat center/cover;
+	height: 350px;
+	width: 350px;
+	padding: 30px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.bouillongroenten a{
+	font: normal 100%/1.5 Rajdhani, Arial, sans-serif;
+	color: white;
+	background: #A1C11A;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	border-radius: 15px;
+	text-decoration: none;
+}
+
+.bolletje::before{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	font-size: 3.5rem;
+	content: "\f142";
+	color: #A1C11A;
+}
+	
+.bolletje{
+	position: relative;
+	bottom: 200px;
+	left: 410px;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 900px){
+	.bolletje{display: none;}
+ 	
+ 	.meest h4{
+		font: bold 100%/1.5 Rajdhani, Arial, sans-serif;
+		color: #819D62;
+		font-size: 40px;
+		margin: 50px 0 0 0;
+		text-align: center;
+	}
+
+	.mainaside{
+		column-count: 3;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+	}
+
+	.kaaskrokketen{
+		background: url(../images/kaaskroketten/kaaskroketten.jpeg) no-repeat center/cover;
+		height: 350px;
+		width: 350px;
+		padding: 30px;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items:flex-end;
+	}
+
+	.kaaskrokketen a{
+		font: normal 100%/1.5 Rajdhani, Arial, sans-serif;
+		color: white;
+		background: #A1C11A;
+		font-size: 20px;
+		padding: 10px 20px 10px 20px;
+		text-align: center;
+		border-radius: 15px;
+		text-decoration: none;
+	}
+
+	.frambozen{
+		background: url(../images/frambozen/frambozen.jpeg) no-repeat center/cover;
+		height: 350px;
+		width: 350px;
+		padding: 30px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items:flex-end;
+	}
+
+	.frambozen a{
+		font: normal 100%/1.5 Rajdhani, Arial, sans-serif;
+		color: white;
+		background: #A1C11A;
+		font-size: 20px;
+		padding: 10px 20px 10px 20px;
+		text-align: center;
+		border-radius: 15px;
+		text-decoration: none;
+	}
+}
+
+
+/* footer stijlen --------------------------------------*/
+
+footer{
+	background: #4C5F28;
+	margin-top: 20px;
+	height: 650px;
+	width: 100%;
+}
+
+footer img{
+	width: 60%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.navfooter ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font: normal 100%/2 Helvetica nueu, Arial, sans-serif;
+	margin-left: 50px;
+	width: 30px;
+}
+
+.navfooter ul li a:hover{ color: #A1C11A;}
+
+address{display: none;}
+
+@media screen and (min-width: 900px){
+	footer{ 
+		height: 400px;
+		display: grid;
+		width: 100%;
+		grid-template-columns: 33.33% 33.33%;
+		grid-template-rows: auto;
+
+	}
+
+	footer .address img{ 
+		width: 50%;
+		position: relative;
+		top: 20px;
+		left: 80px;
+	}
+
+	.address address{
+		color: white;
+		text-transform: uppercase;
+		font: normal 100%/2 Helvetica nueu, Arial, sans-serif;
+		font-size: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: -20px;
+		left: 10px;
+	}
+
+	.navfooter ul{
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font: normal 100%/3 Helvetica nueu, Arial, sans-serif;
+		position: relative;
+		top: 50px;
+		left: 800px;
+		width: 30px;
+	}
+
+	.navfooter li{width: 30px;}
+}
+
+/* Nieuwsbrief ------------------------------------ */
+
+.nieuwsbrief p{
+	font: 700 100%/1.5 helvetica nueu, Arial, sans-serif;
+	color: white;
+	font-size: 20px;
+	margin: 20px;
+	position: relative;
+	left: 50px;
+}
+
+.nieuwsbrief input{
+	border: none;
+	padding: 12px;
+	color: #4C5F28;
+}
+
+.nieuwsbrief button{
+	background: white;
+	font: 400 80%/1.5 Helvetica neue, Arial, sans-serif;
+	border: none;
+	border-radius: 10px;
+	padding: 8px;
+	color: #4C5F28;
+	position: absolute;
+	left: 65px;
+}
+
+.icoonen a{
+	color: white;
+	position: relative;
+	top: -3px;
+	left: 200px;
+	height: 20px;
+	font-size: 30px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 900px){
+
+	.nieuwsbrief{
+		height: 30px;
+		position: relative;
+		top: -180px;
+		left: 650px;
+	}
+
+	.icoonen a{
+		top: -50px;
+		left: 300px;
+	}
+}
+
+/*prodcuten pagina ------------------------------- */
+/* grid layout ----------------------------------- */
+.categories { 
+    margin: 20px auto;
+    padding: 1em;
+    display: grid;
+    grid-template: auto / 100%;
+    grid-gap: 20px;
+}
+
+.categories figure { 
+    background: black; 
+    display: grid;
+    grid-template: 2fr 1fr / auto;
+    align-items: end;
+}
+
+.categories figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.categories figure figcaption {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+    
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.button {
+    display: inline-block;
+	color: white;
+	background: #4C5F28;
+	padding: 10px 50px 10px 45px;
+    margin: 0 auto;
+	border-radius: 20px;
+	text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font: 400 100%/1.5 Rajdhani, Arial, sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+    .categories {
+        display: grid;
+        grid-template: repeat(5, 400px) / repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 0 6em 2px 6em;
+    }
+    
+    .vlees01 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3; 
+    }
+    
+    .ijs01{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+    }
+
+    .snacks01{
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+    }
+
+    .groenten01{
+    	 grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+
+    .fruit01{
+        grid-row: 2 / 4;
+        grid-column: 3 / 4;
+    }
+
+    .vis{
+    	grid-row: 2 / 4;
+        grid-column:  / 4;
+    }
+
+    .vlees02 {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2; 
+    }
+
+    .brood-gebak01{
+    	grid-row: 4 / 5;
+        grid-column: 2 / 4; 
+    }
+
+    .pizza01{
+    	grid-row: 5 / ;
+        grid-column: 1 / 3; 
+    }
+}
+
+/* vruchtentaart ------------------------------------*/
+
+.vruchtentaart{
+	background: url(../images/vruchtentaart/vruchtentaart.jpeg) no-repeat center/cover;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.vruchtentaart h1{
+	color: black;
+	font-size: 15px;
+	font-weight: 400;
+	margin: 0 auto;
+	margin-bottom: 110px;
+	background: white;
+	padding: 20px 50px 20px 50px;
+	opacity: 80%;
+}
+
+@media screen and (min-width: 900px){
+	.vruchtentaart h1{
+		font-size: 30px
+	}
+}
+
+
+/*prodcutcategorie pagina ------------------------- */
+/* grid layout ------------------------------------ */
+
+main h1 a{ 
+	text-decoration: none; 
+	color: #4C5F28;
+}
+
+.groenten{
+	display: block;
+	text-transform: none;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.groenten:hover{
+	font-weight: 700;
+}
+
+.fruit{
+	display: block;
+	text-transform: none;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.fruit:hover{
+	font-weight: 700;
+}
+
+.productcategorie { 
+    margin: 20px auto;
+    padding: 1em;
+    display: grid;
+    grid-template: auto / 100%;
+    grid-gap: 20px;
+}
+
+.productcategorie figure { 
+    display: grid;
+    grid-template: 2fr 1fr / auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.productcategorie figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.productcategorie figure figcaption {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+    
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.wortel figcaption{margin-top: 60px;}
+
+.button01 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    height: 100px;
+	color: white;
+	background: #819D62;
+	text-decoration: none;
+    font-size: 20px;
+    font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: -64px;
+    border-radius: 15px
+}
+
+.details{
+	background: #A7C042;
+	height: 40px;
+	width: 40%;
+	text-transform: uppercase;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.winkelmandje a{
+	color: white;
+	position: relative;
+	left: 170px;
+	height: 20px;
+	font-size: 25px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.winkelmandje01 a{  
+	color: white;
+	position: relative;
+	left: 430px;
+	height: 20px;
+	font-size: 25px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    .productcategorie{
+        display: grid;
+        grid-template: repeat(5, 400px) / repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 0 6em 2px 6em;
+    }
+
+   	.bouillongroenten01 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2; 
+    }
+
+    .witte-asperges {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3; 
+    }
+
+    .bloemkool{
+    	grid-row: 1 / 2;
+    	grid-column: 3 / 4;
+    }
+
+    .bonen{
+    	grid-row: 2 / 3;
+    	grid-column: 1 / 2;
+    }
+
+    .broccoli{
+    	grid-row: 2 / 3;
+    	grid-column: 2 / 3;
+    }
+
+    .broccolimix{
+    	grid-row: 2 / 3;
+    	grid-column: 3 / 4;
+    }
+
+     .wintergroentenpan{
+    	grid-row: 3 / 4;
+    	grid-column: 1 / 3;
+    }
+
+    .groenten-boterpan{
+    	grid-row: 3 / 4;
+    	grid-column: 3 / 4;
+    }
+
+    .paprika{
+    	grid-row: 4 / 5;
+    	grid-column: 1 / 2;
+    }
+
+    .wortel{
+    	grid-row: 4 / 5;
+    	grid-column: 2 / 3;
+    }
+
+    .tomaat{
+    	grid-row: 4 / 5;
+    	grid-column: 3 / 4;
+    }
+
+    .komkommer{
+    	grid-row: 5 / 6;
+    	grid-column: 1 / 2;
+    }
+
+     .champignonschijfjes01{
+    	grid-row: 5 / 6;
+    	grid-column: 2 / 3;
+    }
+
+    .erwten-wortelen01{
+    	grid-row: 5 / 6;
+    	grid-column: 3 / 4;
+    }
+}
+
+/*recepten pagina --------------------------------- */
+.recept {
+    background: url(../images/dessert/recept%20dessert.jpeg) no-repeat center/cover;
+    height: 100%;
+}
+
+.recept article {
+    background: rgba(193,208,176,.85);
+    padding: 2em;
+    font-weight: 300;
+}
+
+.recept h2 {
+    font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+	color: white;
+	font-size: 1.67em;
+    text-align: left;
+}
+
+.recept h3{
+    font: 300 100%/1.5 Rajdhani, Arial, sans-serif;
+	font-size: 1rem;
+	margin-bottom: 1em;
+    margin-left: 20px;
+    color: #4C5F28;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.recept p{color: white;}
+
+.recept article .button { margin-top: 1em; }
+
+@media screen and (min-width: 900px) {
+    .recept{margin-top: 60px;}
+    
+    .recept article { 
+        width: 40%; 
+        margin-left: 250px;
+    }
+    
+    .recept h2{
+        width: 70%;
+        position: relative;
+        left: 70px;
+    }
+    
+    .recept h3{
+        position: relative;
+        left: 50px;
+    }
+    
+    .recept article p{
+        position: relative;
+        left: 80px;
+    }
+}
+
+/*grid receptenpagina ---------------------------*/
+.recepten { 
+    margin: 20px auto;
+    padding: 1em;
+    display: grid;
+    grid-template: auto / 100%;
+    grid-gap: 20px;
+}
+
+.recepten figure { 
+    display: grid;
+    grid-template: 2fr 1fr / auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.recepten figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.recepten figure figcaption {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+    
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.button01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    height: 100px;
+	color: white;
+	background: #819D62;
+	text-decoration: none;
+    font-size: 20px;
+    font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: -64px;
+    border-radius: 15px
+}
+
+.naar{
+	background: #A7C042;
+	height: 40px;
+	width: 40%;
+	text-transform: uppercase;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	letter-spacing: 1px;
+	margin-top: 40px;
+}
+
+.naar01{
+	background: #4C5F28;
+	height: 40px;
+	width: 40%;
+	text-transform: uppercase;
+	color: white;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 15px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+    .recepten{
+        display: grid;
+        grid-template: repeat(3, 400px) / repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 40px 6em 0 6em;
+    }
+
+   	.salade {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3; 
+    }
+
+    .desserts {
+        grid-row: 1 / 3;
+        grid-column: 3 / 4; 
+    }
+    
+    .desserts figcaption a{
+        bottom: -115px;
+    }
+
+    .feestelijk{
+    	grid-row: 2 / 3;
+    	grid-column: 2 / 3;
+    }
+
+    .alle{
+    	grid-row: 2 / 4;
+    	grid-column: 1 / 2;
+    }
+    
+    .alle figcaption a{
+        bottom: -115px;
+    }
+
+    .soep{
+    	grid-row: 3 / 4;
+    	grid-column: 2 / 4;
+    }
+
+    .naar01{
+        position: relative;
+        left: 550px;
+        margin-bottom: 20px;
+    }
+}
+
+/*Feesten pagina ---------------------------------------*/
+
+	.feest{ height: 1390px;}  
+    
+    .formule{
+        width: 100%;
+        height: 150px;
+        background: #8FAA70;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    h5{
+        font: bold 100%/1.5 Rajdhani, Arial, sans-serif;
+        color: white;
+        padding-top: 20px;
+    }
+    
+    .formule p{
+        padding-top: 10px;
+        padding-top: 20px;
+        color: white;
+    }
+
+    .feest .formule .worst{color: black;}
+
+    .formule button{
+    	border: none;
+    	padding: 20px 30px 20px 20px;
+    	background: #819D62;
+    	color: white;
+    	margin-top: 30px;
+    	border-radius: 15px;
+    }
+    
+    .formule button p{
+    	padding: 0 0 0 10px;
+    }
+
+    .icoonen01 p{
+    	color: #819D62;
+    	padding: 5px;
+    	margin-top: 20px;
+    	font-size: 30px;
+    }
+
+    /* foodtruck stijlen ----------------------------*/
+
+    
+ .feest section {
+    background: #C0CEB0;
+    width: 100vw;
+    margin: 23em auto;
+    position: relative;
+    color: white;
+}
+
+.feest .foodtruck .animatie-houder h2 {
+    font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    z-index: 200;
+}
+
+.feest .foodtruck {
+    display: flex;
+    flex-direction: column;
+}
+
+.feest section h5 {
+    font: 700 20px/1.5 Rajdhani, Arial, sans-serif;
+    color: white;
+    padding-top: 20px;
+}
+
+.feest section p {
+    font: 400 100%/1.6 Rajdhani, Arial, sans-serif;
+    color: white;
+    padding-top: 20px;
+}
+
+.meerinfo {
+    border: none;
+    background: #A1C11A;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 15px; 
+    margin-top: 20px;
+}
+
+.aantal {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    background: rgba(135, 155, 104, 1);
+    border-radius: 10px;
+    padding: 0 1em;
+}
+
+.aantal ul { display: flex; }
+
+.aantal ul li { padding: .5em 0; }
+
+.aantal ul li:first-child {
+    border-right: 2px solid #C0CEB0;
+    padding-right: 1em;
+}
+
+.aantal ul li:last-child { padding-left: 1em; }
+
+.feest .verwachten {
+    padding: 5em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.animatie-houder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    background: rgba(135, 155, 104, 1);
+}
+
+@media screen and (min-width: 1000px) {
+    .feest section {
+        height: 500px;
+        width: 1000px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .feest .foodtruck {
+        display: flex;
+        flex-direction: column;
+    }
+    .feest .foodtruck { flex-direction: row; }
+    
+    .feest .verwachten { padding: 2em; } 
+    
+    .animatie-houder { 
+        width: auto;
+        height: 500px; 
+    }
+
+    .feest{ height: 1020px;}   
+}
+
+/*Allergenen pagina ---------------------------------------*/
+
+.allergenen { 
+    margin: 50px auto;
+    padding: 1em;
+    display: grid;
+    grid-template: auto / 100%;
+    grid-gap: 20px;
+}
+
+.allergenen figure { 
+    display: grid;
+    grid-template: 2fr 1fr / auto;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.allergenen figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.allergenen figure figcaption {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+    
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.button03 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    height: 100px;
+	color: white;
+	background: #819D62;
+	text-decoration: none;
+    font-size: 20px;
+    font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: -64px;
+    border-radius: 15px
+}
+
+.meerinfo{
+	background: #A7C042;
+	height: 40px;
+	width: 45%;
+	text-transform: uppercase;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.hart a{
+	color: white;
+	position: relative;
+	left: 170px;
+	height: 20px;
+	font-size: 25px;
+	padding: 5px;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 900px) {
+    .allergenen{
+        display: grid;
+        grid-template: repeat(2, 400px) / repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 0 6em 2px 6em;
+    }
+
+   	.gluten {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2; 
+    }
+
+    .vege {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3; 
+    }
+
+    .melk{
+    	grid-row: 1 / 2;
+    	grid-column: 3 / 4;
+    }
+
+    .gezond{
+    	grid-row: 2 / 3;
+    	grid-column: 1 / 4;
+    }
+
+    .gezond .hart{margin-left: 1000px;}
+}
+/* allergenen recept stijlen ----------------------------*/
+.lactose{
+		background: #8FAA70;
+		height: 1000px;
+	}
+
+	.lactose h2{
+		font: 700 100%/1.5 Rajdhani, Arial, sans-serif;
+		font-size: 40px;
+		color: white;
+		text-align: left;
+		margin: 20px;
+		padding-top: 20px;
+	}
+
+	.lactose p{
+		color: white;
+		width: 80%;
+		margin: 20px;
+	}
+
+	.lactose .meerinfo{
+		text-transform: capitalize;
+	}
+
+	.wafel{
+		background: url(../images/allergenen/wafels.jpeg) no-repeat center/cover;
+		width: 100%;
+		height: 700px;
+	}
+
+	.intolerantie .wafel .meerinfo{
+		margin-top: 540px;
+		text-transform: capitalize;
+	}
+
+	.intolerantie .wafel h5{
+		color: #4C5F28;
+		text-align: center;
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+
+@media screen and (min-width: 900px){
+	.intolerantie{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto;
+	}
+
+	.lactose{height: 700px;}
+
+	.lactose h2{margin-left: 50px;}
+
+	.lactose p{margin-left: 50px;}
+}
+
+/* contact pagina ---------------------------------------------*/
+
+	.contact02 img{display: none;}
+
+	.contact01{
+		color: #4C5F28;
+		text-align: center;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.contact02 p{
+		color: #4C5F28;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px;
+	}
+
+	.container03 input[type=text], select, textarea{
+		width: 100%; /* Full width */
+		padding: 12px; /* Some padding */  
+		border: 1px solid #ccc; /* Gray border */
+		border-radius: 4px; /* Rounded borders */
+		box-sizing: border-box; /* Make sure that padding and width stays in place */
+		margin-top: 10px; /* Add a top margin */
+		margin-bottom: 20px; /* Bottom margin */
+		resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+		color: gray;
+	}	
+
+	input[type=submit] {
+		background-color: white;
+		color: gray;
+		padding: 12px 20px;
+		border: none;
+		margin: 20px 0 20px 0;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+  		background-color: #A7C042;
+  		color: white;
+	}
+
+	.container03 {
+  		border-radius: 5px;
+  		background-color: #8FAA70;
+  		padding: 20px;
+	}
+
+	.container03 p{
+		font-size: 20px;
+		margin-bottom: 25px;
+		color: white;
+		text-align: center;
+	}
+
+	.container03 label{color: white;}
+
+	.container03{ text-align: left;}
+
+
+@media screen and (min-width: 900px){
+	.contact02 img{
+		display: inline-block;
+		width: 20%;
+		margin-bottom: -40px;
+	}
+
+	.contact02{
+		background: white;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.contact02 p{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.container03 input[type=text], select, textarea{
+		width: 100%;
+		padding-right: 50px;
+	}
+
+	.contact01{ 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 70px;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	iframe{
+		width: 100%;
+		margin-top: 40px;
+	}
+}
+
+
+
+
+
+
